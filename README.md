@@ -1,4 +1,95 @@
-# 📘 OverTheWire Bandit Levels 
+# 📘 OverTheWire Bandit Levels walkthrough 
+
+
+This repository contains a step-by-step walkthrough of Bandit Wargame Levels 0 to 5, explaining how each password is obtained using basic Linux commands.
+
+It is beginner-friendly and focuses on file handling, hidden files, and special filenames.
+
+
+## 🌐 Game Access Details
+
+Host: bandit.labs.overthewire.org
+Port: 2220
+
+SSH Login format:
+```bash
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+```
+
+# Level 0 → Level 1
+
+Username: bandit0
+Password: bandit0
+
+Goal: Find the password stored in a file named `readme`.
+
+Commands:
+```bash
+ls
+cat readme
+```
+
+# Level 1 → Level 2
+
+Goal: Password is stored in a file named `-`
+
+Commands:
+```bash
+ls
+cat ./-
+```
+
+# Level 2 → Level 3
+
+Goal: Password is in a file named `spaces in this filename`
+
+Commands:
+```bash
+ls
+cat "spaces in this filename"
+```
+
+# Level 3 → Level 4
+
+Goal: Password is inside a hidden file in the `inhere` directory.
+
+Commands:
+```bash
+ls
+cd inhere
+ls -a
+cat ...Hiding-From-You
+```
+
+# Level 4 → Level 5
+
+Goal: Password is in the only human-readable file inside `inhere`.
+
+Commands:
+```bash
+ls
+cd inhere
+ls
+cat ./-file{00..09}
+```
+
+# 🧰 Commands Learned
+```bash
+ssh            # Remote login
+ls             # List directory contents
+cd             # Change directory
+cat            # View file content
+ls -a          # Show hidden files
+./filename     # Access special filenames
+"filename"     # Handle spaces
+{00..09}       # Brace expansion
+```
+
+# 🏁 Conclusion
+
+>Levels 0 → 5 teach fundamental Linux skills required for cybersecurity and CTF challenges.
+
+-----
 
 This repository documents the solutions and command usage for Bandit Levels.
 
