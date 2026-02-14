@@ -1,4 +1,4 @@
-# 📘 OverTheWire Bandit Levels walkthrough 
+## OverTheWire Bandit Levels walkthrough 
 
 
 This repository contains a step-by-step walkthrough of Bandit Wargame Levels 0 to 5, explaining how each password is obtained using basic Linux commands.
@@ -16,7 +16,7 @@ SSH Login format:
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
 
-# Level 0 → Level 1
+### Level 0 → Level 1
 
 Username: bandit0
 Password: bandit0
@@ -29,7 +29,7 @@ ls
 cat readme
 ```
 
-# Level 1 → Level 2
+### Level 1 → Level 2
 
 Goal: Password is stored in a file named `-`
 
@@ -39,7 +39,7 @@ ls
 cat ./-
 ```
 
-# Level 2 → Level 3
+### Level 2 → Level 3
 
 Goal: Password is in a file named `spaces in this filename`
 
@@ -49,7 +49,7 @@ ls
 cat "spaces in this filename"
 ```
 
-# Level 3 → Level 4
+### Level 3 → Level 4
 
 Goal: Password is inside a hidden file in the `inhere` directory.
 
@@ -61,7 +61,7 @@ ls -a
 cat ...Hiding-From-You
 ```
 
-# Level 4 → Level 5
+### Level 4 → Level 5
 
 Goal: Password is in the only human-readable file inside `inhere`.
 
@@ -73,7 +73,7 @@ ls
 cat ./-file{00..09}
 ```
 
-# 🧰 Commands Learned
+# Commands Learned
 ```bash
 ssh            # Remote login
 ls             # List directory contents
@@ -85,7 +85,7 @@ ls -a          # Show hidden files
 {00..09}       # Brace expansion
 ```
 
-# 🏁 Conclusion
+### 🏁 Conclusion
 
 >Levels 0 → 5 teach fundamental Linux skills required for cybersecurity and CTF challenges.
 
