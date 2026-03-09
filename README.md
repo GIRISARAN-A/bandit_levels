@@ -269,7 +269,6 @@ Run file as owner:
 | nmap | Scanning | 16–17 |
 | diff | Compare | 17–18 |
 
----
 
 # Conclusion
 
