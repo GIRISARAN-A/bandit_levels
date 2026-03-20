@@ -1,7 +1,7 @@
 ## OverTheWire Bandit Levels walkthrough 
-
+<p align="center">
 <img width="367" height="184" alt="image" src="https://github.com/user-attachments/assets/f96fd1a5-0175-477c-b56d-6bbad2dfe3f6" />
-
+</p>
 
 This repository contains a step-by-step walkthrough of Bandit Wargame Levels 0 to 5, explaining how each password is obtained using basic Linux commands.
 
@@ -93,9 +93,9 @@ ls -a          # Show hidden files
 
 
 This repository documents the solutions and command usage for Bandit Levels.
-
+<p align="center">
 <img width="446" height="113" alt="image" src="https://github.com/user-attachments/assets/f64f04fa-a7dc-4000-9207-c72928e81bf7" />
-
+</p>
 
 ## Skills Learned
 
